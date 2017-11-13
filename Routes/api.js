@@ -5,7 +5,14 @@ var Dev = require('../models/devSchema');
 
 //GET route handler
 Router.get('/dev', function (req, res) {
-  res.send({ type: 'GET' });
+  
+  Dev.geoNear(
+    { type: 'Point', coordinates: [parseFloat(req.query.lng), parseFloat(req.query.lat)]},
+    { maxDistance: 100000, spherical: true }
+  ).then(function (devs) {
+    res.send(devs);
+  });
+
 });
 
 //POST route handler
