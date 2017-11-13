@@ -1,6 +1,18 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+//Geolocation Schema
+var geoSchema = new Schema ({
+  type: {
+    type: String,
+    default: "Point"
+  },
+  coordinates: {
+    type: [Number],
+    index: "2dsphere"
+  }
+});
+
 //dev data Schema
 var devSchema = new Schema ({
   name: {
@@ -14,6 +26,7 @@ var devSchema = new Schema ({
     type: Boolean,
     default: false
   },
+  geometry: geoSchema
 
 });
 
