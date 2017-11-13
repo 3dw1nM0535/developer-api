@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/3dw1nM0535/developer-api#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "mocha": "^4.0.1"
   }
 }
