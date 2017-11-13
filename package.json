@@ -1,0 +1,23 @@
+{
+  "name": "developer-api",
+  "version": "1.0.0",
+  "description": "Hire Developer near your area or in your area",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3dw1nM0535/developer-api.git"
+  },
+  "keywords": [
+    "Hire",
+    "Developer"
+  ],
+  "author": "Edwin Moses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3dw1nM0535/developer-api/issues"
+  },
+  "homepage": "https://github.com/3dw1nM0535/developer-api#readme"
+}
