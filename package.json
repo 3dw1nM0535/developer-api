@@ -4,7 +4,7 @@
   "description": "Hire Developer near your area or in your area",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/3dw1nM0535/developer-api/issues"
   },
-  "homepage": "https://github.com/3dw1nM0535/developer-api#readme"
+  "homepage": "https://github.com/3dw1nM0535/developer-api#readme",
+  "dependencies": {
+    "mocha": "^4.0.1"
+  }
 }
