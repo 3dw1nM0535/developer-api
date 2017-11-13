@@ -19,6 +19,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Routes Middleware
 app.use('/api', require('./Routes/api'));
 
+//Error handler Middleware
+app.use(function (err, req, res, next) {
+  res.status(422).send({ error: err.message });
+});
+
 //Port number def
 var port = 1234 || process.env.PORT;
 
