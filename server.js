@@ -7,7 +7,7 @@ var app = express();
 
 
 //connect to mongodb
-mongoose.connect('mongodb://localhost/developers', { useMongoClient: true });
+mongoose.connect(process.env.MONGO_URI, { useMongoClient: true });
 
 //mongoose promise Middleware
 mongoose.Promise = global.Promise;
