@@ -28,9 +28,9 @@ app.use(function (err, req, res, next) {
 });
 
 //Port number def
-var port = 1234 || process.env.PORT;
+//var port = 1234 || process.env.PORT;
 
 //listen for request on port 1234
-app.listen(port, function () {
+app.listen(process.env.PORT, function () {
   console.log('Listening for requests!');
 });
