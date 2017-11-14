@@ -4,7 +4,8 @@
   "description": "Hire Developer near your area or in your area",
   "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "express": "^4.16.2",
     "mocha": "^4.0.1",
     "mongoose": "^4.13.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
   }
 }
