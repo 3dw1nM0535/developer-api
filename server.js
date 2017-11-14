@@ -12,6 +12,9 @@ mongoose.connect('mongodb://localhost/developers', { useMongoClient: true });
 //mongoose promise Middleware
 mongoose.Promise = global.Promise;
 
+//Statc files serve Middleware
+app.use(express.static(process.cwd() + '/public'));
+
 //Body-parser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
