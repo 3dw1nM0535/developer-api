@@ -46,6 +46,9 @@ var Dev = React.createClass({
         devs: json
       });
     });
+
+    this.refs.lng.value = '';
+    this.refs.lat.value = '';
   }
 
 });
